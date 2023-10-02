@@ -4,17 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(img/nuages.jpg);
+}
+
+h1 {
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .container {
     text-align: center;
     margin-top: 10%;
     margin-left: 40%;
     margin-right: 40%;
-    background: rgba( 245, 223, 223, 1 );
+    background: rgba( 87, 80, 220 , 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 5px solid rgba( 255, 255, 255, 0.8 );
+    z-index : 1;
 }
 
 .button {
