@@ -1,0 +1,51 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+  }
+
+.contenu {
+    overflow: hidden;
+}
+
+.header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #a6a6a6;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav {
+    font-family: op;
+    display: flex;
+}
+
+.bouton_nav{
+    font-size: 20px;
+    color: #00437a;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.langue{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #a6a6a6;
+}
+
+.langue_bouton {
+    font-size: 20px;
+    color: chocolate;
+    padding-left: 50px;
+    padding-right: 50px;
+}
