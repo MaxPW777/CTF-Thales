@@ -37,6 +37,8 @@ main{
     padding: 10px;
     border-radius: 30px;
     border: var(--border-color) 2px solid;
+    position: relative;
+    transition: all 0.2s ease-in-out;
 }
 
 header{
@@ -68,35 +70,42 @@ footer{
     font-size: x-large;
 }
 
-.hidden{
-    animation: fadeOut 0.2s forwards   ;
+.hidden {
+    animation: fadeOut 0.2s forwards;
+    display: none;
 }
 
-@keyframes fadeOut{
-    from{
+@keyframes fadeOut {
+    from {
         opacity: 1;
-        display: flex;
     }
-    to{
-        opacity: 0;
+    to {
         display: none;
+        opacity: 0;
     }
 }
 
-/* .focus{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.focus{
+    margin-top: 3rem;
     display: flex;
-} */
+    scale: 1.1;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    animation: 0.2s ease-in-out;    
 
-main.focus{
-    align-items: center;
-    justify-content: center;
 }
 
-.loginBtn{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#loginBtn{
     height: 2rem;
     background-color: #BAB895;
     margin: 1rem;
@@ -106,9 +115,47 @@ main.focus{
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-    
     color: white;
     font-weight: bold;
     font-size: large;
     cursor: pointer;
 }
+
+#loginForm{
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--item-background-color);
+    border-radius: 20px;
+    border: var(--border-color) 2px solid;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+.loginForm{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--item-background-color);
+    border-radius: 20px;
+    border: var(--border-color) 2px solid;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+#loginForm.show{
+display: flex;}
