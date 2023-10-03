@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --header-color: #A39F93;
+    --border-color: #050405af;
+    --item-background-color: #AD9F93;
+}
+
+
+body{
+    background-color: #574845;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.windowItem > img{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 30px;
+}
+
+main{
+    display: flex;
+    flex-flow: wrap row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.windowItem{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--item-background-color);
+    padding: 10px;
+    border-radius: 30px;
+    border: var(--border-color) 2px solid;
+}
+
+header{
+    width: auto;
+    height: 3rem;
+    background-color: var(--header-color);
+    margin: 1rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+footer{
+    width: auto;
+    height: 3rem;
+    background-color: var(--header-color);
+    margin-top: 1rem;
+    display: none;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.hidden{
+    animation: fadeOut 0.2s forwards   ;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+        display: flex;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* .focus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+} */
+
+main.focus{
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBtn{
+    height: 2rem;
+    background-color: #BAB895;
+    margin: 1rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
