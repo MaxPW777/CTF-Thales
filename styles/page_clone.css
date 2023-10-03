@@ -20,12 +20,13 @@ html {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
 }
 
 .nav {
     font-family: op;
     display: flex;
+    margin-left: 50%;
 }
 
 .bouton_nav{
@@ -48,4 +49,22 @@ html {
     color: chocolate;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+
+
+.logo_img {
+    height: 70px;
+}
+
+body {
+    background-image:url(/page_login/img/nuages.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center 0.9em;
+}
+
+.message {
+    display: none;
+
 }
