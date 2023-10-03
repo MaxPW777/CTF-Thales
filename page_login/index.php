@@ -27,8 +27,6 @@
             </form>
         </div>
     </div>
-
-    <p><?php echo $erreur; ?></p>
     
 </body>
 </html>
