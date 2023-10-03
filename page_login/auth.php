@@ -24,7 +24,7 @@ $result = $bdd->query($query);
 
 if ($result->num_rows == 1) {
     // L'utilisateur est authentifié avec succès
-    header("Location: index.php");
+    header("Location: ../pages/main.html");
 } else {
      //L'authentification a échoué
     echo "Nom d'utilisateur ou mot de passe incorrect.";
