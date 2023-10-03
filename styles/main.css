@@ -121,41 +121,31 @@ footer{
     cursor: pointer;
 }
 
-#loginForm{
+#loginForm, .loginForm {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--item-background-color);
+    border-radius: 20px;
+    border: var(--border-color) 2px solid;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    flex-direction: column;
+  }
+  
+  #loginForm {
     display: none;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: var(--item-background-color);
-    border-radius: 20px;
-    border: var(--border-color) 2px solid;
-    position: absolute;
-    top: 0;
-    left: 75%;
-    z-index: 1;
-    transition: all 0.2s ease-in-out;
-    flex-direction: column;
     gap: 2px;
-    
-}
-.loginForm{
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: var(--item-background-color);
-    border-radius: 20px;
-    border: var(--border-color) 2px solid;
-    position: absolute;
-    top: 0;
-    left: 75%;
-    z-index: 1;
-    transition: all 0.2s ease-in-out;
-    flex-direction: column;
-    gap: 2px;
-    
-}
-
-#loginForm.show{
-display: flex;}
+  }
+  
+  .loginForm {
+    margin-top: 4px;
+  }
+  
+  #loginForm.show {
+    display: flex;
+  }

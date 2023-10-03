@@ -42,18 +42,29 @@ windowItems.forEach(item => {
 
 const loginBtn = document.getElementById('loginBtn');
 const loginForm = document.getElementById('loginForm');
-
 loginBtn.addEventListener('click', () => {
   loginForm.classList.toggle('show');
 });
+
+async function getDummyJSON() {
+  const response = await fetch('https://dummyJson.com/users');
+  const json = await response.json();
+  console.log(json.users);
+  users = json.users;
+  return json.users;
+}
 
 document.getElementById('loginForm').addEventListener('submit', (event) => {
   event.preventDefault();
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
-  if (username === 'admin' && password === 'admin') {
-    document.getElementById('loginForm').classList.toggle('hidden');
-    document.getElementById('loginBtn').classList.toggle('hidden');
-    console.log('redirecting: ../page_login/index.php')
-  }
+  //if one of the users is in the array and the password is correct then log in
+  users.forEach(user => {
+    if (user.username === username && user.password === password) {
+      console.log('logged in');
+    }else{
+      console.log('user is not admin');
+      console.log(user.username, user.password, username, password)
+    }
+  })
 });
