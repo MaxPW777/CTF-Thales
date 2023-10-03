@@ -26,14 +26,17 @@ html {
 .nav {
     font-family: op;
     display: flex;
-    margin-left: 50%;
+    margin-left: auto;
 }
 
 .bouton_nav{
     font-size: 20px;
     color: #00437a;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .langue{
@@ -59,7 +62,7 @@ html {
 
 body {
     background-image:url(/page_login/img/nuages.jpg);
-    background-size: cover;
+    background-size: auto auto;
     background-repeat:no-repeat;
     background-position:center 0.9em;
 }
@@ -68,3 +71,76 @@ body {
     display: none;
 
 }
+
+@keyframes multicolor {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+.message {
+    animation: multicolor 5s linear infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130px;
+}
+
+.container {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 120px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container1 {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.nom {
+    font-size: 30px;
+    color: #00437a;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.container3 {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+
+

@@ -24,7 +24,7 @@ $result = $bdd->query($query);
 
 if ($result->num_rows == 1) {
     // L'utilisateur est authentifié avec succès
-    header("Location: ../pages/main.html");
+    header("Location: ../pages/page_clone.html");
 } else {
      //L'authentification a échoué
     echo "Nom d'utilisateur ou mot de passe incorrect.";
