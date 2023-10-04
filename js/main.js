@@ -1,4 +1,4 @@
-import { generateWindowList } from './listGen.js';
+import { generateWindowList, username, password } from './listGen.js';
 
 class windowItem {
   constructor(name, image, price) {
@@ -46,25 +46,16 @@ loginBtn.addEventListener('click', () => {
   loginForm.classList.toggle('show');
 });
 
-async function getDummyJSON() {
-  const response = await fetch('https://dummyJson.com/users');
-  const json = await response.json();
-  console.log(json.users);
-  users = json.users;
-  return json.users;
-}
 
 document.getElementById('loginForm').addEventListener('submit', (event) => {
+  const usernameForm = document.getElementById('username').value;
+  const passwordForm = document.getElementById('password').value;
+  const errorMessage = document.querySelector('.errorMessage');
   event.preventDefault();
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-  //if one of the users is in the array and the password is correct then log in
-  users.forEach(user => {
-    if (user.username === username && user.password === password) {
-      console.log('logged in');
-    }else{
-      console.log('user is not admin');
-      console.log(user.username, user.password, username, password)
-    }
-  })
+  if (usernameForm === "admin" && passwordForm === "MEGASAFE") {
+    errorMessage.value = "bien joue voici le site secret : https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  } else {
+    errorMessage.classList.add('show');
+    // console.log('nom d\'utilisateur n\'est pas : ' + admin +  " et mot de passe n'est pas : " + password);
+  }
 });

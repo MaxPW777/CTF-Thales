@@ -121,20 +121,20 @@ footer{
     cursor: pointer;
 }
 
-#loginForm, .loginForm {
-    flex-flow: column wrap;
+#loginForm {
     justify-content: center;
-    align-items: center;
     color: white;
     background-color: var(--item-background-color);
     border-radius: 20px;
     border: var(--border-color) 2px solid;
     position: absolute;
-    top: 0;
-    left: 75%;
+    left: calc(100% - 13rem);
     z-index: 1;
     transition: all 0.2s ease-in-out;
     flex-direction: column;
+    height: 6rem;
+    width: auto;
+    padding: 1rem;
   }
   
   #loginForm {
@@ -142,10 +142,18 @@ footer{
     gap: 2px;
   }
   
-  .loginForm {
-    margin-top: 4px;
-  }
   
   #loginForm.show {
     display: flex;
+  }
+  .errorMessage.show {
+    display: flex;
+  }
+
+  .errorMessage{
+    color: red;
+    font-size: small;
+    margin-left: 1rem;
+    display: none;
+    text-align: center;
   }

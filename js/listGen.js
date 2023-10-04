@@ -8,3 +8,6 @@ export function generateWindowList(numberOfImages) {
 function randomPrice() {
     return String(Math.floor(Math.random() * 1000)) + ' $';
 }
+
+export const password = "MEGASAFE"
+export const username = "admin"
