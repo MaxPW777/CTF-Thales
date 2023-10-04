@@ -53,9 +53,12 @@ document.getElementById('loginForm').addEventListener('submit', (event) => {
   const errorMessage = document.querySelector('.errorMessage');
   event.preventDefault();
   if (usernameForm === "admin" && passwordForm === "MEGASAFE") {
-    errorMessage.value = "bien joue voici le site secret : https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    errorMessage.innerHTML = "bien joue voici le site secret : localhost:8080/page_login/index.php";
+    errorMessage.classList.add('show');
   } else {
     errorMessage.classList.add('show');
+    console.log(usernameForm, passwordForm);
+    console.error("niggy");
     // console.log('nom d\'utilisateur n\'est pas : ' + admin +  " et mot de passe n'est pas : " + password);
   }
 });

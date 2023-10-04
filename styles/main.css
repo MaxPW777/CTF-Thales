@@ -152,7 +152,7 @@ footer{
 
   .errorMessage{
     color: red;
-    font-size: small;
+    font-size:x-small;
     margin-left: 1rem;
     display: none;
     text-align: center;
