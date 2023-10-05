@@ -15,10 +15,10 @@
             <h1>Log-in</h1>
             <br />
             <form action="auth.php" method="POST">
-                <input type="text" name="username" placeholder="Username" required="required" />
+                <input type="text" name="username" placeholder="Username" required="required" autocomplete="off" />
                 <br />
                 <br />
-                <input type="password" name="password" placeholder="Password" required="required" />
+                <input type="password" name="password" placeholder="Password" required="required" autocomplete="off" />
                 <br />
                 <br />
                 <button type="submit" class="button">Log-in</button>
